@@ -1,7 +1,7 @@
 # chatApp
 Python Chat App with GUI
 
-### We are using  [Write A Chat App in Python](https://medium.com/swlh/lets-write-a-chat-app-in-python-f6783a9ac1701) as a reference for this project
+### We are using  [Write A Chat App in Python](https://medium.com/swlh/lets-write-a-chat-app-in-python-f6783a9ac170) as a reference for this project
 
 ## Required Installations
 

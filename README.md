@@ -30,3 +30,7 @@ Once inside the virtual environment, install the required packages (*NOTE: Some 
 ```bash
 pip3 install -r requirements.txt
 ```
+Once the required packages are install, go to the link in the summary to get started. Use <code>server.py</code> for the server code and <code>client.py</code> for the client code.
+
+# Good Luck!
+end

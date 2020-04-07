@@ -47,13 +47,13 @@ def handle_client(client_socket):
     
     # handle incoming chatStrings from the client
     while True:
-        
         # receive the chatString from the client
         chatString = client_socket.recv(BUFFERSIZE)
-                # broadcast chatString to the JenkoChat chat room
+        # broadcast chatString to the JenkoChat chat room
         if chatString != bytes("{quit}", "utf8"):
             broadcast(chatString, userName+": ")
-                # if the user sends the {quit} command,
+
+        # if the user sends the {quit} command,
         # terminate the connection and clean up
         else:
             client_socket.send(bytes("Goodbye!", "utf8"))
@@ -87,7 +87,6 @@ def accept_incoming_connections():
             # add a dictionary element of {obj: client_socket:client_address}
             addresses[client_socket] = client_address
             
-            
             # spawn a new thread to handle the client conection
             Thread(target=handle_client, args=(client_socket,)).start
 
@@ -106,7 +105,6 @@ if __name__ == "__main__":
     CONNECTION_HANDLER.join()
     while(CONNECTION_HANDLER.isAlive()):
         CONNECTION_HANDLER.join()
-    SERVER.close
     
     # once the connection handler is dead, close the server down
     SERVER.close()

@@ -1,16 +1,6 @@
 # The chatApp Project
 This is a simple project using TCP, multithreading, and python to create a server/client instant messaging application. We are using  [Write A Chat App in Python](https://medium.com/swlh/lets-write-a-chat-app-in-python-f6783a9ac1701) as a reference for this project. It should take 1-2 hours to complete the project.
 
-<<<<<<< HEAD
-### We are using  [Write A Chat App in Python](https://medium.com/swlh/lets-write-a-chat-app-in-python-f6783a9ac170) as a reference for this project
-
-## Required Installations
-
-**To Install PIP3:** <code>sudo apt install python3-pip</code></br>
-**To Install VENV (Virtual Environments for Python):** <code>sudo apt install python3-venv</code><br>
-**To Install Pylint:** <code>pip3 install pylint</code><br>
-**To Install autopep8:** <code>pip3 install autopep8</code><br>
-=======
 ## Getting Started
 ******************
 **Make sure your package repositories are up to date:**
@@ -25,7 +15,6 @@ sudo apt install python3-pip && python3-venv
 To create a virtual environment, pass the python3 interpreter the <code>venv</code> module (donted with the <code>-m</code> flag) and the desired name of the new environment:
 ```bash
 python3 -m venv <environmentName>
->>>>>>> CleanBranch
 
 EXAMPLE: python3 -m venv chatApp
 ```

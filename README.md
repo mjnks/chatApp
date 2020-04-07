@@ -10,3 +10,7 @@ Python Chat App with GUI
 **To Install Pylint:** <code>pip3 install pylint</code><br>
 **To Install autopep8:** <code>pip3 install autopep8</code><br>
 
+## Running the app
+
+**Install Python3 on local machine**</br>
+**Run the client.py with the native python terminal**</br>

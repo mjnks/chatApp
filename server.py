@@ -49,7 +49,7 @@ def handle_client(client_socket):
     while True:
         # receive the chatString from the client
         chatString = client_socket.recv(BUFFERSIZE)
-        
+
         # broadcast chatString to the JenkoChat chat room
         if chatString != bytes("{quit}", "utf8"):
             broadcast(chatString, userName+": ")
@@ -58,6 +58,8 @@ def handle_client(client_socket):
         # terminate the connection and clean up
         else:
             client_socket.send(bytes("Goodbye!", "utf8"))
+            # this will initiate a shutdown on the client side
+            # ISSUE: improve the code so the client handles shutdown!
             client_socket.send(bytes("{quit}", "utf8"))
             client_socket.close
             del clients[client_socket]

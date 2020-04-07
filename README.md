@@ -1,12 +1,32 @@
-# chatApp
-Python Chat App with GUI
+# The chatApp Project
+This is a simple project using TCP, multithreading, and python to create a server/client instant messaging application. We are using  [Write A Chat App in Python](https://medium.com/swlh/lets-write-a-chat-app-in-python-f6783a9ac1701) as a reference for this project. It should take 1-2 hours to complete the project.
 
-### We are using  [Write A Chat App in Python](https://medium.com/swlh/lets-write-a-chat-app-in-python-f6783a9ac1701) as a reference for this project
+## Getting Started
+******************
+**Make sure your package repositories are up to date:**
+```bash
+sudo apt update && apt upgrade
+```
+**Make sure PIP3 and Virtual Environments are installed:**
+```bash
+sudo apt install python3-pip && python3-venv
+```
+**Create and Enter the Virtual Environment:** <br>
+To create a virtual environment, pass the python3 interpreter the <code>venv</code> module (donted with the <code>-m</code> flag) and the desired name of the new environment:
+```bash
+python3 -m venv <environmentName>
 
-## Required Installations
-
-**To Install PIP3:** <code>sudo apt install python3-pip</code></br>
-**To Install VENV (Virtual Environments for Python):** <code>sudo apt install python3-venv</code><br>
-**To Install Pylint:** <code>pip3 install pylint</code><br>
-**To Install autopep8:** <code>pip3 install autopep8</code><br>
-
+EXAMPLE: python3 -m venv chatApp
+```
+This will create a new directory in the current folder with the same name as the virtual environment you just created. To enter the environment, invoke the <code>activate</code> binary in <code>./\<environmentName\>/bin/</code>
+```bash
+source <environmentName>/bin/activate
+```
+Upon success, the commandline prompt will update, indicating the user is in a virtual environment:
+```bash
+(<environmentName>) userprompt$
+```
+Once inside the virtual environment, install the required packages (*NOTE: Some packages may already be installed in the non-virtual environment, but they will not be available in the virtual environment until the installation commands are run.*):
+```bash
+pip3 install -r requirements.txt
+```

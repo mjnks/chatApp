@@ -49,6 +49,7 @@ def handle_client(client_socket):
     while True:
         # receive the chatString from the client
         chatString = client_socket.recv(BUFFERSIZE)
+        
         # broadcast chatString to the JenkoChat chat room
         if chatString != bytes("{quit}", "utf8"):
             broadcast(chatString, userName+": ")
